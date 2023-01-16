@@ -13,7 +13,27 @@
 <script type="text/javascript">
 //EDIT UNDER THIS ONLY
 
-const  firebaseConfig = {
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyCOCNhMxi8ofAVR-dsGJSRVBed2IO_fB-A",
+  authDomain: "speedup-cda3b.firebaseapp.com",
+  projectId: "speedup-cda3b",
+  storageBucket: "speedup-cda3b.appspot.com",
+  messagingSenderId: "379059944412",
+  appId: "1:379059944412:web:44a96fd8ab5a68228cad19",
+  measurementId: "G-LN3HWSN2LB"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
 apiKey: "API KEY",
 authDomain: "AUTH DOMAIN",
 databaseURL: "DATABSE URL",
